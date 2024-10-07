@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: 0;
   color: #fdfefe;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
@@ -11,7 +12,20 @@ body {
 
 header h1 {
   text-align: center;
-  margin: 15px auto;
+  font-weight: 500;
+  padding: 15px;
+  margin: 0 auto 20px auto;
+  box-shadow: 3px 1px 15px #788182;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.description h2 {
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .boxes,
@@ -26,30 +40,44 @@ header h1 {
   padding: 10px;
   margin: 0 auto;
   border-radius: 15px;
-  box-shadow: 3px 3px 10px black;
+  box-shadow: 2px 2px 15px black;
 }
 
-.el-esquerdo,
+
 .el-direito {
   background-color: #48c9b0;
-  margin: 0 0 5px 0;
+  margin: 0 0 9px 0;
   padding: 8px 15px;
-  border: double white 4px;
+  border: double white 2px;
   border-radius: 15px;
+  box-shadow: 1px 1px 5px black;
+}
+
+.el-esquerdo {
+  background-color: #40cde0;
+  margin: 0 0 9px 0;
+  padding: 8px 15px;
+  border: double white 2px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px black;
 }
 
 
-.btn {
+.btn{
   display: block;
   background-color: #ff6f61;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 20px;
   width: 200px;
   margin: 20px auto;
   padding: 10px;
   border: #aab7b8;
   border-radius: 20px;
-  box-shadow: 3px 3px 10px black;
+  box-shadow: 1px 1px 5px black;
+}
+
+.btn:hover{
+ box-shadow: 3px 3px 10px black;
 }
 
 .box-msg {
@@ -60,6 +88,6 @@ header h1 {
   padding: 5px 0;
   text-align: center;
   border-radius: 15px;
-  margin: 10px auto;
+  margin: 0px auto;
   box-shadow: 3px 3px 10px black;
 }

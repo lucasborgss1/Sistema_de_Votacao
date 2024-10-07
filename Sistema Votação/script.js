@@ -22,7 +22,7 @@ function addEsquerdo() {
     document.getElementById("box-esquerda").innerHTML = htmlMostrado;
     document.getElementById("msg").innerText = '';
   } else {
-    document.getElementById("msg").innerText = 'SLOT ESQUERDO CHEGOU AO LIMITE'
+    document.getElementById("msg").innerText = 'A ESQUERDA ATINGIU O LIMITE DE VOTOS'
   }
 }
 
@@ -34,7 +34,7 @@ function addDireito() {
     document.getElementById("box-direita").innerHTML = htmlMostrado;
     document.getElementById("msg").innerText = '';
   } else {
-    document.getElementById("msg").innerText = 'SLOT DIREITO CHEGOU AO LIMITE'
+    document.getElementById("msg").innerText = 'A DIREITA ATINGIU O LIMITE DE VOTOS'
   }
 }
 
@@ -45,7 +45,7 @@ function criaHtml(array) {
   for (let elemento of array) {
     if (elemento.lado == Candidatos.DIREITO) {
       html += '<div class="el-direito">';
-      html += elemento.numero + '. DIREITO';
+      html += elemento.numero + '. DIREITA';
       html += '</div>';
     } else {
       html += '<div class="el-esquerdo">';
